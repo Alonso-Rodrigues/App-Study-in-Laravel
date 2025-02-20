@@ -36,11 +36,15 @@ li {
   width: 10%;
   list-style-type: none;
   justify-content: space-evenly;
+  transition: transform 0.10s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 li:hover {
-  border: 0.1mm solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.1mm solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+  transform: scale(1.06);
 }
 
 .menu a {
@@ -59,19 +63,22 @@ header button {
   font-size: large;
   height: 50%;
   width: 5%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   border-color: rgba(255, 255, 255, 0.3);
-  border: 0.1mm solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition: transform 0.10s ease, background-color 0.1s ease, color 0.1s ease;
 }
 
 header button :hover {
-  transform: scale(1.05);
+  transform: scale(1.06);
   font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0.1mm solid rgba(255, 255, 255, 1);
   border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
   color: black;
 }
 
@@ -85,4 +92,8 @@ header button a {
   text-decoration: none;
   font-weight: 500;
   color: aliceblue;
+}
+
+header button a:hover {
+  font-weight: 800;
 }
