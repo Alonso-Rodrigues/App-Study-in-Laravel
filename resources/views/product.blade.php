@@ -1,10 +1,10 @@
 @extends('welcome') {{-- Estende o layout principal --}}
 
-@section('title', 'HDC Events') {{-- Define o título da página --}}
+@section('title', 'Product Page') {{-- Define o título da página --}}
 
 @section('content') {{-- Define o conteúdo da seção 'content' --}}
     <section class="container_content">
-        <h1>Welcome Page ARA Events</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <h1>Product Page</h1>
+      <p>Showing the product id: {{$id}}</p>
     </section>
 @endsection
