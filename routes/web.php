@@ -1,52 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
 
-Route::get('/', function () {
+Route::get('/', [EventController::class, 'index'] );
 
-    $nome = "Alonso";
-    $idade  = 35;
-    $profissao = 'programador';
+Route::get('/events/create', [EventController::class, 'create'] );
 
-    $arr = [10, 20, 30, 40, 50];
+Route::get('/products', [EventController::class, 'products']);
 
-    $names = ["Alonso", "Vanessa", "Rodrigo", "Vovo", "Madrinha"];
-
-
-    return view('welcome', [
-        'nome' => $nome, 
-        'idade'=>$idade,
-        'profissao' => $profissao,
-        'arr' => $arr, 
-        'names' => $names
-    ]);
+Route::get('/products/{id}', function ($id) {
+    return view('product', ['id'=>$id]);
 });
 
-Route::get('/dicas', function(){
-    $nome = "Alonso";
-    $idade  = 35;
-    $profissao = 'programador';
-
-    $arr = [10, 20, 30, 40, 50];
-
-    $names = ["Alonso", "Vanessa", "Rodrigo", "Vovo", "Madrinha"];
-
-
-    return view('dicas', [
-        'nome' => $nome, 
-        'idade'=>$idade,
-        'profissao' => $profissao,
-        'arr' => $arr, 
-        'names' => $names
-    ]);
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::get('/products', function () {
-    return view('products');
-});
-
+Route::get('/contact', [EventController::class, 'contact']);
 

@@ -1,10 +1,10 @@
 @extends('welcome') {{-- Estende o layout principal --}}
 
-@section('title', 'Contact Page') {{-- Define o título da página --}}
+@section('title', 'Products Page') {{-- Define o título da página --}}
 
 @section('content') {{-- Define o conteúdo da seção 'content' --}}
     <section class="container_content">
-      <h1>Contact us</h1>
-      <a href="/">Back to Home</a>
+      <h1>Product</h1>
+      <p>Showing the product id: {{$id}}</p>
     </section>
 @endsection

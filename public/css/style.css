@@ -1,8 +1,10 @@
 /* --- Geral --- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
@@ -24,7 +26,7 @@ body {
   display: flex;
   align-items: center;
   height: 10vh;
-  width: 100%;
+  width: 99%;
   color: aliceblue;
   font-weight: 500;
   justify-content: space-between;
@@ -35,7 +37,7 @@ body {
   border-radius: 5px;
 }
 
-header {
+nav {
   display: flex;
   align-items: center;
   height: 100%;
@@ -65,7 +67,7 @@ li:hover {
   border-radius: 5px;
 }
 
-a {
+.menu a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,6 +97,18 @@ header button :hover {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   color: black;
+}
+
+header button a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  font-weight: 500;
+  color: aliceblue;
 }
 
 /* --- Principal --- */
