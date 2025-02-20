@@ -17,11 +17,11 @@
                    <li><a href="#">Products</a></li>
                    <li><a href="#">Contact</a></li>
                 </ul>
+                <button><a href="#">Login</a></button>
             </header>
         </nav>
         <main>
             <section class="container_content">
-                <!-- <img src="/img/bannner.jpg" alt=""> -->
                 <h1>Bem-vindo Alonso, primeiro curso Laravel!</h1>
                     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat veniam expedita eaque ullam sunt, dignissimos ipsum delectus accusantium ex, laborum quia cupiditate, libero aliquam? Minima neque aliquid asperiores deserunt alias!</p>
             </section>
