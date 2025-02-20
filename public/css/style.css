@@ -105,8 +105,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 1%;
 }
 
 .container_content {
@@ -122,7 +121,11 @@ main {
 }
 
 h1 {
-  color: red;
+  color: aliceblue;
+}
+
+p {
+  color: aliceblue;
 }
 
 /* --- Footer --- */
