@@ -1,9 +1,10 @@
 <header class="container_menu">
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+             <li><a href="/events/create">Events</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
         <button><a href="#">Login</a></button>
     </nav>
