@@ -1,6 +1,6 @@
 @extends('welcome') {{-- Estende o layout principal --}}
 
-@section('title', 'HDC Events') {{-- Define o título da página --}}
+@section('title', 'Contact Page') {{-- Define o título da página --}}
 
 @section('content') {{-- Define o conteúdo da seção 'content' --}}
     <section class="container_content">
