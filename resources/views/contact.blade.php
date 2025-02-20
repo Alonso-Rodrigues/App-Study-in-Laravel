@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact </title>
-</head>
-<body>
-  <header></header>
-  <main>
-    <section>
-      <h1>Welcome to Contacts Page</h1>
+@extends('welcome') {{-- Estende o layout principal --}}
+
+@section('title', 'Contact Page') {{-- Define o título da página --}}
+
+@section('content') {{-- Define o conteúdo da seção 'content' --}}
+    <section class="container_content">
+      <h1>Contact us</h1>
       <a href="/">Back to Home</a>
     </section>
-  </main> 
-  <footer></footer>
-</body>
-</html>
+@endsection
