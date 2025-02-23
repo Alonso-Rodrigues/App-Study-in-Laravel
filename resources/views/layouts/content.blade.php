@@ -11,7 +11,7 @@
         </p>
         <div class="btn-content">
             <button><a href="/events">Events</a></button>
-            <button><a href="/product">Products</a></button>
+            <button><a href="/products">Products</a></button>
         </div>
     </section>
 @endsection
