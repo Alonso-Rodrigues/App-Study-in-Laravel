@@ -6,6 +6,6 @@
              <li><a href="/events/create">Events</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
-        <button><a href="#">Login</a></button>
+        <button class="btn-geral"><a href="#">Login</a></button>
     </nav>
 </header>  

@@ -72,7 +72,7 @@ header button {
   transition: transform 0.10s ease, background-color 0.1s ease, color 0.1s ease;
 }
 
-header button :hover {
+header button:hover {
   transform: scale(1.06);
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.5);
@@ -95,5 +95,6 @@ header button a {
 }
 
 header button a:hover {
-  font-weight: 800;
+  font-weight: 700;
+  color: black;
 }
