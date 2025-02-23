@@ -13,7 +13,8 @@ class EventController extends Controller
    }
 
    public function create(){
-      return view('events.create');
+      $events = Event::all();
+      return view('events.create',['events'=>$events]);
    }
 
    public function products(){
