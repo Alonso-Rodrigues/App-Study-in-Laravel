@@ -2,7 +2,7 @@
     <nav>
         <ul class="menu">
             <li><a href="/">Home</a></li>
-            <li><a href="/product">Products</a></li>
+            <li><a href="/products">Products</a></li>
              <li><a href="/events">Events</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>

@@ -17,9 +17,9 @@ class EventController extends Controller
       return view('events.events',['events'=>$events]);
    }
 
-   public function product(){
+   public function products(){
       
-      return view('events.product');
+      return view('events.products');
    }
 
    public function contact(){
