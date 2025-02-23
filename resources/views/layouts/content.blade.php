@@ -3,23 +3,15 @@
 @section('title', 'ARA Events') {{-- Define o título da página --}}
 
 @section('content') {{-- Define o conteúdo da seção 'content' --}}
-    <section class="container_content">
+    <section class="container-content">
         <h1>Welcome</h1>
         <p class="content">
             ARA Events is a space dedicated to the underground scene, blending music, culture, and awareness. Our mission is to create authentic and immersive experiences where electronic beats meet the vibrant energy of raves, the groove of reggae, and events focused on sustainability and environmental consciousness.
             Here, music goes beyond entertainment—it’s a tool for connection, expression, and transformation.
         </p>
         <div class="btn-content">
-            <button><a href="/events/create">Events</a></button>
-            <button><a href="/products">Products</a></button>
+            <button><a href="/events">Events</a></button>
+            <button><a href="/product">Products</a></button>
         </div>
-    </section>
-    <section class="container_content">
-        <h1>Next Events</h1>
-        @foreach($events as $event)
-            <h2>{{$event->title}}</h2>
-            <h3>{{$event->city}}</h3>
-            <p class="content">{{$event->description}}</p>
-        @endforeach
     </section>
 @endsection

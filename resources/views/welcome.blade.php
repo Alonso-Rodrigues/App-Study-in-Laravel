@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/footer.css">
     <script src="/js/script.js"></script>
 </head>
