@@ -7,7 +7,7 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/menu.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/content.css">
     <link rel="stylesheet" href="/css/footer.css">
     <script src="/js/script.js"></script>
 </head>
