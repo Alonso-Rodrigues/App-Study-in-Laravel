@@ -10,8 +10,8 @@
             Here, music goes beyond entertainment—it’s a tool for connection, expression, and transformation.
         </p>
         <div class="btn-content">
-            <button><a href="/events/create">Events</a></button>
-            <button><a href="/products">Products</a></button>
+            <button><a href="/events">Events</a></button>
+            <button><a href="/product">Products</a></button>
         </div>
     </section>
 @endsection
