@@ -1,8 +1,8 @@
-<!-- @extends('welcome') 
+@extends('home') 
 
 @section('title', 'Events Page')
 
-@section('events') 
+@section('content') 
   <section class="search-container">
     <section class="search-content">
       <h1>Search for an event</h1>
@@ -31,4 +31,3 @@
     @endforeach
   </section>
 @endsection
- -->
