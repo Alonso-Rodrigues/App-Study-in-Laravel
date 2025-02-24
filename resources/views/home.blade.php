@@ -7,14 +7,14 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/menu.css">
-    <link rel="stylesheet" href="/css/buttons/btn-menu.css">
-    <link rel="stylesheet" href="/css/buttons/btn-content.css">
-    <link rel="stylesheet" href="/css/buttons/events-content.css">
     <link rel="stylesheet" href="/css/create.css">
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/content.css">
     <link rel="stylesheet" href="/css/events.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/buttons/btn-menu.css">
+    <link rel="stylesheet" href="/css/buttons/btn-content.css">
+    <link rel="stylesheet" href="/css/buttons/btn-events.css">
     <script src="/js/script.js"></script>
 </head>
 

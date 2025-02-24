@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('home')
 
 @section('title', 'Contact Page')
 
