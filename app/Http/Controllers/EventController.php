@@ -12,19 +12,13 @@ class EventController extends Controller
       return view('layouts.content',['events'=>$events]);
    }
 
-   public function events(){
-      $events = Event::all();
-      return view('events.events',['events'=>$events]);
-   }
-
-   public function products(){
-      
-      return view('events.products');
+   public function create(){
+      return view('events.create');
    }
 
    public function contact(){
       
-      return view('events.contact');
+      return view('layouts.contact');
    }
    
 }

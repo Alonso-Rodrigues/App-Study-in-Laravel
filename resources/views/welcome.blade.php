@@ -7,22 +7,22 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/menu.css">
-    <link rel="stylesheet" href="/css/content.css">
-    <link rel="stylesheet" href="/css/product.css">
-    <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/create.css">
     <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/events.css">
     <link rel="stylesheet" href="/css/footer.css">
     <script src="/js/script.js"></script>
 </head>
 
 <body>
-    @include('layouts.menu') {{-- Inclui o menu --}}
+    @include('layouts.menu')
 
     <main>
-        @yield('content') {{-- Onde o conteúdo das páginas será inserido --}}
+        @yield('content')
     </main>
 
-    @include('layouts.footer') {{-- Inclui o footer --}}
+    @include('layouts.footer')
 </body>
 
 </html>
