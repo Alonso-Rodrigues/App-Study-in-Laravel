@@ -1,4 +1,4 @@
-.container_create {
+.create_container {
   height: 100vh;
   width: 98vw;
   display: flex;
@@ -8,4 +8,88 @@
   background-color: rgba(0, 0, 0, 0.4);
   margin: 3px;
   border-radius: 5px;
+}
+
+.create_content {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+#create-event-title {
+  font-size: 3.5rem;
+  color: aliceblue;
+  margin-top: 30px;
+}
+
+.create-form-events {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.create-event-label {
+  height: 5vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: aliceblue;
+  margin-top: 30px;
+}
+
+.create-input-form {
+  height: 5vh;
+  width: 50vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.create-input-form::placeholder {
+  font-size: larger;
+  text-align: center;
+  color: aliceblue;
+}
+
+.create-event-select {
+  height: 5vh;
+  width: 50vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: medium;
+  text-align: center;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.create-textarea-form {
+  height: 20vh;
+  width: 50vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  color: aliceblue;
+}
+
+.create-textarea-form::placeholder {
+  padding-top: 80px;
+  text-align: center;
+  font-size: larger;
+  text-align: center;
+  color: aliceblue;
 }
