@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/buttons/btn-menu.css">
     <link rel="stylesheet" href="/css/buttons/btn-content.css">
     <link rel="stylesheet" href="/css/buttons/btn-events.css">
+    <link rel="stylesheet" href="/css/buttons/btn-create.css">
     <script src="/js/script.js"></script>
 </head>
 
