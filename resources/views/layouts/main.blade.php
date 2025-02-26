@@ -4,7 +4,7 @@
 
 @section('content')
   <section class="container-content">
-    <h1>Welcome</h1>
+    <h1 id="title-welcome">Welcome</h1>
     <p class="content">
       ARA Events is a space dedicated to the underground scene, blending music, culture, and awareness. Our mission is to
       create authentic and immersive experiences where electronic beats meet the vibrant energy of raves, the groove of
