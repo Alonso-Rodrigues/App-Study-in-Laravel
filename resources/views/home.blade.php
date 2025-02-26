@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/msg.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/create.css">
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/content.css">
