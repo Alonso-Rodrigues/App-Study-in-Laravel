@@ -21,6 +21,15 @@
   border-radius: 10px;
 }
 
+.event-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 3.5rem;
+  margin: 2%;
+}
+
 .form-control {
   height: 5vh;
   width: 50vw;
@@ -89,6 +98,15 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+
+#event-title,
+#event-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
 }
 
 .content-description {
