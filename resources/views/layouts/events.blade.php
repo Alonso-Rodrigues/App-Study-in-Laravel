@@ -17,7 +17,7 @@
     @foreach($events as $event)
       <section class="events-content">
         <section class="events-banner">
-          <img src="/img/banner.jpg" alt="{{$event->title}}">
+          <img src="/img/events/{{$event->image}}" alt="{{$event->title}}">
           <p class="event-date">xx/xx/xxxx</p>
           <p class="content-participants">Participants</p>
           <button class="content-btn"><a href="">Learn more</a></button>

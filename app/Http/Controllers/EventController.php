@@ -30,8 +30,9 @@ class EventController extends Controller
 
          $requestImage = $request->image;
          $extension = $requestImage->extension();
-         $imageName = md5($requestImage->image->getClientOriginalName() . strtotime('now')) . "." . $extension;
-         $request->image->move(public_path('img/events'));
+         $imageName = md5($requestImage->getClientOriginalName() . strtotime('now')) . "." . $extension;
+         $requestImage->move(public_path('img/events'), $imageName);
+         $event->image = $imageName;
       }
 
       $event->save();
