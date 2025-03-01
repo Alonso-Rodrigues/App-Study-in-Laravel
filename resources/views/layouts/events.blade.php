@@ -17,15 +17,16 @@
     @foreach($events as $event)
       <section class="events-content">
         <section class="events-banner">
-          <img src="/img/events/{{$event->image}}" alt="{{$event->title}}">
-          <p class="event-date">xx/xx/xxxx</p>
-          <p class="content-participants">Participants</p>
-          <button class="content-btn"><a href="">Learn more</a></button>
+          <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
+          <p id="event-date">xx/xx/xxxx</p>
+          <button class="content-btn"><a href="/events/{{ $event->id }}">Learn more</a></button>
         </section>
         <section class="events-data">
-          <h2 id="event-title">{{$event->title}}</h2>
-          <h3 id="event-city">{{$event->city}}</h3>
-          <p class="content-description">{{$event->description}}</p>
+          <h2 id="event-title">{{ $event->title  }}</h2>
+          <h3 id="event-city">
+            <ion-icon name="pin-outline"></ion-icon>{{ $event->city }}
+          </h3>
+          <p class="content-description">{{ $event->description }}</p>
         </section>
       </section>
     @endforeach

@@ -33,7 +33,4 @@
     </form>
   </section>
 </section>
-  <section class="create_container">
-
-  </section>
 @endsection
