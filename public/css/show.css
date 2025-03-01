@@ -50,6 +50,11 @@
   font-size: 1.5rem;
 }
 
+#show-city,
+#show-participants {
+  flex-direction: row;
+}
+
 .show-description {
   height: 40%;
   width: 30%;

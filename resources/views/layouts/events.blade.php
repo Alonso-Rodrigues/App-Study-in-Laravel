@@ -23,7 +23,9 @@
         </section>
         <section class="events-data">
           <h2 id="event-title">{{ $event->title  }}</h2>
-          <h3 id="event-city">{{ $event->city }}</h3>
+          <h3 id="event-city">
+            <ion-icon name="pin-outline"></ion-icon>{{ $event->city }}
+          </h3>
           <p class="content-description">{{ $event->description }}</p>
         </section>
       </section>
