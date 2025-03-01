@@ -18,8 +18,7 @@
       <section class="events-content">
         <section class="events-banner">
           <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
-          <p class="event-date">xx/xx/xxxx</p>
-          <p class="content-participants">Participants</p>
+          <p id="event-date">xx/xx/xxxx</p>
           <button class="content-btn"><a href="/events/{{ $event->id }}">Learn more</a></button>
         </section>
         <section class="events-data">
