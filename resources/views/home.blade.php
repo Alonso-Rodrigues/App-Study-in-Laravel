@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/content.css">
     <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/show.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/buttons/btn-menu.css">
     <link rel="stylesheet" href="/css/buttons/btn-content.css">
