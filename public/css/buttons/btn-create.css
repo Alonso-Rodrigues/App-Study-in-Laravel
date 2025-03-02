@@ -1,5 +1,5 @@
 .btn-create {
-  height: 8%;
+  height: 7%;
   width: 10%;
   background-color: rgba(0, 0, 0, 0.5);
   border-color: rgba(255, 255, 255, 0.3);
@@ -10,7 +10,7 @@
   cursor: pointer;
   transition: transform 0.10s ease, background-color 0.1s ease, color 0.1s ease;
   color: aliceblue;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 .btn-create:hover {

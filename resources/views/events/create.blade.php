@@ -29,6 +29,14 @@
       <label class="create-event-label" for="title">Description</label>
       <textarea class="create-textarea-form" type="text" name="description" id="description" placeholder="What will your event be like?"></textarea>
 
+      <label class="create-event-label" for="title">Add infrastructure</label>
+      <section class="create-event-items">
+        <input type="checkbox" name="items[]" value="stage">Stage
+        <input type="checkbox" name="items[]" value="stereo">Stereo
+        <input type="checkbox" name="items[]" value="pick-Ups">Pick-Ups
+        <input type="checkbox" name="items[]" value="stage lighting">Stage lighting
+      </section>
+
       <button class="btn-create" type="submit" value="create event">Submit</button>
     </form>
   </section>

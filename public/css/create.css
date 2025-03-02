@@ -11,20 +11,20 @@
 }
 
 .create_content {
-  height: 90%;
-  width: 90%;
+  height: 92vh;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 0.1mm solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+  padding: 1%;
 }
 
 #create-event-title {
   font-size: 3.5rem;
   color: aliceblue;
-  margin-top: 30px;
 }
 
 .create-input-img {
@@ -33,13 +33,12 @@
 }
 
 .create-form-events {
-  height: 90%;
+  height: 100%;
   width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2%;
 }
 
 .create-event-label {
@@ -51,7 +50,7 @@
   align-items: center;
   font-size: 1.5rem;
   color: aliceblue;
-  margin-top: 30px;
+  margin-top: 0.5%;
 }
 
 .create-input-form {
@@ -97,5 +96,18 @@
   text-align: center;
   font-size: larger;
   text-align: center;
+  color: aliceblue;
+}
+
+.create-event-items {
+  height: 5vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
   color: aliceblue;
 }

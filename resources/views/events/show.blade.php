@@ -15,6 +15,12 @@
         <p id="show-participants">
           <ion-icon name="people-outline"></ion-icon>Participants
         </p>
+        <h3 id="show-city">The event will include:</h3>
+        <ul>
+          @foreach($event->items as $item)
+          <li>{{ $item }}</li>
+          @endforeach
+        </ul>
         <button class="btn-show"><a href="#">Subscribe</a></button>
       </section>
       <section class="show-description">
