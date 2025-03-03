@@ -9,9 +9,11 @@
     <h1 id="create-event-title"> Create Your Event!</h1>
     <form class="create-form-events" action="/events" method="POST" enctype="multipart/form-data">
       @csrf {{-- blade directive against Cross-site request forgery attacks --}}
-
       <label class="create-event-label" for="img">Event image</label>
       <input class="create-input-img" type="file" id="image" name="image">
+
+      <label class="create-event-label" for="date">Event date</label>
+      <input class="create-input-date" type="date" id="date" name="date">
       
       <label class="create-event-label" for="title">Event</label>
       <input class="create-input-form" type="text" id="title" name="title" placeholder="Event Name">

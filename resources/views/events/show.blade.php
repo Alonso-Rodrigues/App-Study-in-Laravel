@@ -11,7 +11,7 @@
         <h3 id="show-city">
           <ion-icon name="pin-outline"></ion-icon>{{ $event->city }}
         </h3>
-        <p id="show-date">xx/xx/xxxx</p>
+        <p id="show-date">{{ date('d/m/y', strtotime($event->date)) }}</p>
         <p id="show-participants">
           <ion-icon name="people-outline"></ion-icon>Participants
         </p>

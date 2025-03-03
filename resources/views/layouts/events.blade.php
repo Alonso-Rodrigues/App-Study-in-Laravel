@@ -18,7 +18,7 @@
       <section class="events-content">
         <section class="events-banner">
           <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
-          <p id="event-date">xx/xx/xxxx</p>
+          <p id="event-date">{{ date('d/m/y', strtotime($event->date)) }}</p>
           <button class="content-btn"><a href="/events/{{ $event->id }}">Learn more</a></button>
         </section>
         <section class="events-data">
@@ -30,5 +30,8 @@
         </section>
       </section>
     @endforeach
+    @if(count($events) == 0)
+    <p id="no-events">There are no events available yet</p>
+    @endif
   </section>
 @endsection
