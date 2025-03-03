@@ -27,11 +27,6 @@
   color: aliceblue;
 }
 
-.create-input-img {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: aliceblue;
-}
-
 .create-form-events {
   height: 100%;
   width: 90%;
@@ -39,6 +34,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.create-input-img,
+.create-input-date {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: aliceblue;
 }
 
 .create-event-label {

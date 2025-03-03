@@ -11,60 +11,100 @@
 }
 
 .show-content {
-  height: 85%;
-  width: 90%;
+  height: 96%;
+  width: 98%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.show-title-img {
+  /* border: red solid; */
+  height: 100%;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding: 3%;
+}
+
+#show-title {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  border: 0.1mm solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  padding: 1%;
+  color: aliceblue;
+  font-size: 2.5rem;
+  margin-bottom: 1%;
 }
 
 .show-img {
-  height: 70%;
-  width: 40%;
+  height: 85%;
+  width: 80%;
+  display: block;
   border: 0.1mm solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
+  border-radius: 5px;
+  margin: auto;
 }
 
 .show-info {
-  height: 40%;
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  height: 100%;
+  width: 100%;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  place-items: center;
 }
 
-#show-title,
-#show-city,
-#show-date,
-#show-participants {
+#show-city {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 2rem;
+  margin-top: 3%;
+}
+
+#show-date,
+#show-participants,
+#show-include {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: aliceblue;
   font-size: 1.5rem;
+  margin: 1.5%;
 }
 
-#show-city,
-#show-participants {
-  flex-direction: row;
-}
-
-.show-description {
-  height: 40%;
-  width: 30%;
+.show-items {
+  height: 30%;
+  width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
+  color: aliceblue;
+  margin-left: 10%;
+}
+
+.show-description {
+  height: 50%;
+  width: 50%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
   background-color: rgba(0, 0, 0, 0.4);
   border: 0.1mm solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
+  border-radius: 5px;
   color: aliceblue;
   font-size: 1.5rem;
 }
