@@ -3,14 +3,14 @@
 @section('title', 'Events Page')
 
 @section('content') 
-  <section class="search-container">
+  {-<!-- <section class="search-container">
     <section class="search-content">
       <h1 class="event-title">Search for an event</h1>
       <form action="">
         <input class="form-control" type="text" id="search" name="search" placeholder="search for an event">
       </form>
     </section>
-  </section>
+  </section> -->-}
 
   <section class="events-container">
     <h1 class="event-title">Next Events</h1>
