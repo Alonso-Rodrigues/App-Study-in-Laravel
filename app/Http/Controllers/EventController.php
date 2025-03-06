@@ -7,15 +7,25 @@ use App\Models\Event;
 
 class EventController extends Controller
 {
-  public function home(){
+   public function home(){
    
    return view('layouts.main');
    }
 
    public function events(){
+
+      $search = request('search');
+      if($search){
+
+          $events = Event::where([
+            ['title', 'like', '%'.$search.'%']
+          ])->get();
+
+      }else{
+         $events = Event::all();
+      }
       
-      $events = Event::all();
-      return view('layouts.events', ['events' => $events]);
+      return view('layouts.events', ['events' => $events, 'search' => $search]);
    }
 
    public function store(Request $request){
