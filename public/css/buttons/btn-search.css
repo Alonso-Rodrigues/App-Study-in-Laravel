@@ -1,0 +1,23 @@
+.btn-search {
+  height: 15%;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-size: larger;
+  color: aliceblue;
+  cursor: pointer;
+  transition: transform 0.10s ease, background-color 0.1s ease, color 0.1s ease;
+}
+
+.btn-search:hover {
+  transform: scale(1.06);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0.1mm solid rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  color: black;
+}
