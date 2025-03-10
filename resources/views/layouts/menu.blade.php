@@ -20,7 +20,8 @@
         <button class="btn-geral">
             <form action="/logout" method="POST">
                 @csrf
-                <a href="/logout" onClick="event.preventDefault();
+                <a href="/logout" 
+                onClick="event.preventDefault();
                 this.closest('form').submit();">
                     Log Out
                 </a>
