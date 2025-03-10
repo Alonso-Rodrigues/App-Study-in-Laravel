@@ -37,7 +37,7 @@
       </section>
 
       <section class="show-description">
-        <p><ion-icon name="star-outline"></ion-icon> Producer</p>
+        <p><ion-icon name="star-outline"></ion-icon> Producer: {{ $eventOwner['name'] }}</p>
         <p>{{ $event->description }}</p>
       </section>
       <button class="btn-show"><a href="#">Subscribe</a></button>
