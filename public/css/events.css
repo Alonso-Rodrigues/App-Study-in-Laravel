@@ -1,58 +1,3 @@
-.search-container {
-  height: 100vh;
-  width: 98vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  margin: 3px;
-  border-radius: 5px;
-}
-
-.search-container-search {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  /* padding: 1%; */
-}
-
-.event-title-search {
-  color: aliceblue;
-  font-size: 2rem;
-}
-
-.search-container-search input {
-  color: aliceblue;
-  font-size: large;
-}
-
-.event-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: aliceblue;
-  font-size: 3.5rem;
-  margin: 2%;
-}
-
-.form-control {
-  height: 5vh;
-  width: 50vw;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 0.1mm solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  margin-bottom: 20%;
-}
-
-.form-control::placeholder {
-  color: aliceblue;
-  font-size: larger;
-  text-align: center;
-}
-
 .events-container {
   min-height: 100vh;
   width: 98vw;
@@ -64,6 +9,59 @@
   margin: 3px;
   border-radius: 5px;
   padding: 1%;
+}
+
+.search-container {
+  height: 30vh;
+  width: 96vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.no-events {
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+.no-events a {
+  text-decoration: none;
+  color: rgb(88, 187, 229);
+  text-shadow: rgb(62, 102, 138) 1px 3px 3px;
+}
+
+.form-control {
+  min-height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-control input {
+  height: 15%;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: large;
+}
+
+.form-control input::placeholder {
+  color: aliceblue;
+  font-size: large;
+  text-align: center;
+}
+
+.event-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 2.5rem;
 }
 
 .events-content {
@@ -133,9 +131,4 @@
   align-items: center;
   color: aliceblue;
   font-size: 1.5rem;
-}
-
-#no-events {
-  color: aliceblue;
-  font-size: 3.5rem;
 }

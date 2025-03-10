@@ -5,15 +5,28 @@
 @section('content') 
   <section class="events-container">
 
-    <h1 class="event-title">Next Events</h1>
-    <section class="search-container-search">
+    <section class="search-container">
       @if($search)
-       <h1 class="event-title-search">Search for an event: {{ $search }}</h1>
+       <h1 class="no-events">Searching for the event: {{ $search }}</h1>
       @endif
-      <form action="/events" method="GET">
-        <input class="form-control" type="text" id="search" name="search" placeholder="search for an event">
+      <form class="form-control" action="/events" method="GET">
+        <input type="text" name="search" placeholder="search for an event">
+        <button class="btn-search" type="submit">Search</button>
       </form>
+
+      @if(count($events) == 0 && $search)
+        <h2 class="no-events">Event not found!
+          <a href="/events"> See all</a>
+        </h2>
+        </>
+      @elseif(count($events) == 0)
+        <h2 class="no-events">There are no events available yet</h2>
+      @endif
     </section>
+
+    @if(count($events) > 0)
+        <h1 class="event-title">Next Events</h1>
+    @endif
 
     @foreach($events as $event)
       <section class="events-content">
@@ -31,13 +44,6 @@
         </section>
       </section>
     @endforeach
-    @if(count($events) == 0 && $search)
-      <p id="no-events">Event not found with {{ $search }}!
-        <a href="/events">See all</a>
-      </p>
-    @elseif(count($events) == 0)
-      <p id="no-events">There are no events available yet</p>
-    @endif
   </section>
 
 @endsection

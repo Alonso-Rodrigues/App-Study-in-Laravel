@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/buttons/btn-menu.css">
     <link rel="stylesheet" href="/css/buttons/btn-content.css">
+    <link rel="stylesheet" href="/css/buttons/btn-search.css">
     <link rel="stylesheet" href="/css/buttons/btn-events.css">
     <link rel="stylesheet" href="/css/buttons/btn-create.css">
     <link rel="stylesheet" href="/css/buttons/btn-show.css">
