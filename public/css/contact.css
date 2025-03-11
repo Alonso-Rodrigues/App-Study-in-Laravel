@@ -1,4 +1,4 @@
-.container_contact {
+.container-contact {
   height: 100vh;
   width: 98vw;
   display: flex;
@@ -8,4 +8,38 @@
   background-color: rgba(0, 0, 0, 0.4);
   margin: 3px;
   border-radius: 5px;
+}
+
+.container-contact-section {
+  height: 96%;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: aliceblue;
+
+}
+
+#container-contact-title {
+  font-size: 2.5rem;
+}
+
+.container-contact-content {
+  /* border: red solid; */
+  height: 50%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+#container-contact-home {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.5rem;
 }
