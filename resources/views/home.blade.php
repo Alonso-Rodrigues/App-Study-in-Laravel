@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/msg.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="/css/create.css">
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/content.css">
