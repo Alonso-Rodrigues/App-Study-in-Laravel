@@ -28,8 +28,14 @@
                                 </td>
                                 <td>0</td>
                                 <td>
-                                    <a href="#">Edit</a>
-                                    <a href="#">Delete</a>
+                                    <button>
+                                        <a href="#">Edit</a>
+                                    </button>    
+                                    <form action="/events/{{ $event->id }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button>Delete</button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach
