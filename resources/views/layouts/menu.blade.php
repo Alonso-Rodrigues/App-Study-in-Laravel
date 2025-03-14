@@ -17,16 +17,16 @@
             <button class="btn-geral"><a href="/login">Login</a></button>
         @endguest
         @auth
-        <button class="btn-geral">
-            <form action="/logout" method="POST">
-                @csrf
-                <a href="/logout" 
-                onClick="event.preventDefault();
-                this.closest('form').submit();">
-                    Log Out
-                </a>
-            </form>
-        </button>    
+            <button class="btn-geral">
+                <form action="/logout" method="POST">
+                    @csrf
+                    <a href="/logout" 
+                    onClick="event.preventDefault();
+                    this.closest('form').submit();">
+                        Log Out
+                    </a>
+                </form>
+            </button>    
         @endauth   
     </nav>
 </header>  
