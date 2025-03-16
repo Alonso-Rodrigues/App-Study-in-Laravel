@@ -1,6 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* resources/css/app.css */
+@import 'global.css';
+@import 'menu.css';
+@import 'msg.css';
+@import 'main.css';
+@import 'dashboard.css';
+@import 'create.css';
+@import 'contact.css';
+@import 'content.css';
+@import 'events.css';
+@import 'show.css';
+@import 'footer.css';
+@import 'buttons/btn-menu.css';
+@import 'buttons/btn-content.css';
+@import 'buttons/btn-search.css';
+@import 'buttons/btn-events.css';
+@import 'buttons/btn-create.css';
+@import 'buttons/btn-show.css';
 
 [x-cloak] {
     display: none;

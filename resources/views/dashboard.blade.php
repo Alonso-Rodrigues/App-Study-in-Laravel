@@ -45,7 +45,7 @@
                         </tbody>
                     </table>        
                     @else
-                    <p>You don't have any events yet. 
+                    <p id="create-one">You don't have any events yet. 
                         <a href="/events/create">Let's create one!</a>
                     </p>
                 @endif
