@@ -16,6 +16,7 @@
 @import 'buttons/btn-events.css';
 @import 'buttons/btn-create.css';
 @import 'buttons/btn-show.css';
+@import 'buttons/btn-dashboard.css';
 
 [x-cloak] {
     display: none;

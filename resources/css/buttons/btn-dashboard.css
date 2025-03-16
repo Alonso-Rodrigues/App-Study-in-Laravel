@@ -1,0 +1,65 @@
+.btn-dashboard-title {
+  text-decoration: underline;
+  text-shadow: rgb(62, 102, 138) 1px 3px 3px;
+  color: rgb(88, 187, 229);
+  cursor: pointer;
+}
+
+.btn-dashboard-title:hover {
+  text-decoration: underline;
+}
+
+.btn-dashboard-edit {
+  height: 30px;
+  width: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  transition: transform 0.10s ease, background-color 0.1s ease, color 0.1s ease;
+}
+
+.btn-dashboard-edit:hover {
+  transform: scale(1.10);
+  background-color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.btn-dashboard-edit a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1d8536;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 90%;
+  font-weight: 700;
+}
+
+.btn-dashboard-edit,
+form {
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-dashboard-delete {
+  height: 30px;
+  width: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
+  border: 0.1mm solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: #ff0000cc;
+  cursor: pointer;
+  transition: transform 0.10s ease, background-color 0.1s ease, color 0.1s ease;
+}
+
+.btn-dashboard-delete:hover {
+  transform: scale(1.10);
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}

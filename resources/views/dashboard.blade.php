@@ -25,20 +25,22 @@
                                 <tr>
                                     <td>{{ $loop->index + 1 }}</td>
                                     <td>
-                                        <a href="/events/{{ $event->id }}">
+                                        <a class="btn-dashboard-title" href="/events/{{ $event->id }}">
                                             {{ $event->title }}
                                         </a>
                                     </td>
                                     <td>0</td>
-                                    <td>
-                                        <button>
-                                            <a href="#">Edit</a>
-                                        </button>    
+                                    <td class="test">
+                                        <div class="btn-dashboard-edit">
+                                            <a href="#">EDIT</a> 
+                                        </div>      
                                         <form action="/events/{{ $event->id }}" method="POST">
                                             @csrf
                                             @method('DELETE')
-                                            <button>Delete</button>
-                                        </form>
+                                            <button type="submit" class="btn-dashboard-delete">
+                                                DELETE
+                                            </button>
+                                        </form> 
                                     </td>
                                 </tr>
                             @endforeach
@@ -53,4 +55,4 @@
         </section>
     </section>
 @endsection
-                   
+
