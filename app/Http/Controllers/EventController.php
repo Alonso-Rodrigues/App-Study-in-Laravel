@@ -82,11 +82,16 @@ class EventController extends Controller
       return view('dashboard', ['events' => $events]);
    } 
 
-   public function destroy($id){
+   public function destroy($id)
+   {
+      $event = Event::findOrFail($id);
+      $imagePath = public_path('img/events/' . $event->image);
+      $event->delete();
 
-      Event::findOrFail($id)->delete();
+      if (file_exists($imagePath)) {
+         unlink($imagePath);
+      }
       
       return redirect('dashboard')->with('msg', 'Event deleted successfully');
-
    }
 }
