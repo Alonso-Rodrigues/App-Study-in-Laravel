@@ -5,9 +5,12 @@
 @section('content')
     <section class="dashboard-container">
         <section class="dashboard-content">
+            @if(session('msg'))
+            <p id="msg">{{session('msg')}}</p>
+            @endif
             <h1 id="dashboard-title">My Events</h1>
             <section class="dashboard-content-table">
-                @if(count($events) > 0)
+                @if(count($events ?? []) > 0)
                     <table>
                         <thead>
                             <tr>
@@ -42,7 +45,7 @@
                         </tbody>
                     </table>        
                     @else
-                    <p>You don't have any events yet. 
+                    <p id="create-one">You don't have any events yet. 
                         <a href="/events/create">Let's create one!</a>
                     </p>
                 @endif
