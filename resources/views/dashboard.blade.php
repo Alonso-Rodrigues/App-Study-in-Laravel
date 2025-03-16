@@ -1,15 +1,53 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends('home')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-welcome />
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+@section('title', 'Dashboard')
+
+@section('content')
+    <section class="dashboard-container">
+        <section class="dashboard-content">
+            <h1 id="dashboard-title">My Events</h1>
+            <section class="dashboard-content-table">
+                @if(count($events) > 0)
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Participants</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($events as $event)
+                                <tr>
+                                    <td>{{ $loop->index + 1 }}</td>
+                                    <td>
+                                        <a href="/events/{{ $event->id }}">
+                                            {{ $event->title }}
+                                        </a>
+                                    </td>
+                                    <td>0</td>
+                                    <td>
+                                        <button>
+                                            <a href="#">Edit</a>
+                                        </button>    
+                                        <form action="/events/{{ $event->id }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button>Delete</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>        
+                    @else
+                    <p>You don't have any events yet. 
+                        <a href="/events/create">Let's create one!</a>
+                    </p>
+                @endif
+            </section>
+        </section>
+    </section>
+@endsection
+                   
