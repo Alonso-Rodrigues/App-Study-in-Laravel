@@ -52,7 +52,7 @@ class EventController extends Controller
       $event->user_id = $user->id;
 
       $event->save();
-      return redirect('/')->with('msg','Event created successfully!');
+      return redirect('dashboard')->with('msg','Event created successfully!');
    }
 
    public function create(){
@@ -86,7 +86,7 @@ class EventController extends Controller
 
       Event::findOrFail($id)->delete();
       
-      return view('dashboard')->with('msg', 'Event deleted successfully');
+      return redirect('dashboard')->with('msg', 'Event deleted successfully');
 
    }
 }

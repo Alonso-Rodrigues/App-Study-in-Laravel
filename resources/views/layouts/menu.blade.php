@@ -1,18 +1,21 @@
 <header class="container-menu">
     <nav class="menu-nav">
         <ul class="menu-ul">
-            @guest
-                <li class="menu-li"><a href="/">Home</a></li>
-                <li class="menu-li"><a href="/register">Register</a></li>
-                <li class="menu-li"><a href="/contact">Contact</a></li>
-            @endguest
-            
             @auth
                 <li class="menu-li"><a href="/dashboard">Dashboard</a></li>
                 <li class="menu-li"><a href="/events">My Events</a></li>
             @endauth
+
+            @guest
+                <li class="menu-li"><a href="/">Home</a></li>
+            @endguest
             
-            <li class="menu-li"><a href="/events/create">Create Events</a></li>           
+                <li class="menu-li"><a href="/events/create">Create Events</a></li> 
+                
+            @guest
+                <li class="menu-li"><a href="/register">Register</a></li>
+                <li class="menu-li"><a href="/contact">Contact</a></li>
+            @endguest  
         </ul>
 
         @guest

@@ -3,9 +3,6 @@
 @section('title', 'ARA Events')
 
 @section('content')
- @if(session('msg'))
-      <p id="msg">{{session('msg')}}</p>
-    @endif
   <section class="container-content">
     <h1 id="title-welcome">Welcome</h1>
     <p class="content">
