@@ -45,7 +45,8 @@
 
 .dashboard-content-table th,
 .dashboard-content-table td {
-  padding: 10px;
+  height: 100px;
+  padding: 30px;
   border-bottom: 0.1mm solid rgba(255, 255, 255, 0.2);
 }
 
@@ -55,21 +56,19 @@
 
 .dashboard-content-table td a {
   text-decoration: none;
-  color: #007bff;
-}
-
-.dashboard-content-table td a:hover {
-  text-decoration: underline;
 }
 
 #create-one {
-  border: red solid;
+  position: relative;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   align-items: center;
-  /* border: 0.1mm solid rgba(255, 255, 255, 0.2); */
-  /* border-radius: 5px; */
-  /* font-size: 2rem; */
-  /* color: aliceblue; */
+  font-size: 2rem;
+  margin: auto;
+}
+
+#create-one a {
+  text-decoration: none;
+  color: rgb(88, 187, 229);
+  text-shadow: rgb(62, 102, 138) 1px 3px 3px;
 }
