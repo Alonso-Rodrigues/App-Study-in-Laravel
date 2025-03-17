@@ -4,11 +4,12 @@
 @import 'msg.css';
 @import 'main.css';
 @import 'dashboard.css';
+@import 'events.css';
 @import 'create.css';
+@import 'show.css';
+@import 'edit.css';
 @import 'contact.css';
 @import 'content.css';
-@import 'events.css';
-@import 'show.css';
 @import 'footer.css';
 @import 'buttons/btn-menu.css';
 @import 'buttons/btn-content.css';
@@ -16,6 +17,7 @@
 @import 'buttons/btn-events.css';
 @import 'buttons/btn-create.css';
 @import 'buttons/btn-show.css';
+@import 'buttons/btn-edit.css';
 @import 'buttons/btn-dashboard.css';
 
 [x-cloak] {
