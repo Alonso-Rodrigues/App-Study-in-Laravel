@@ -32,7 +32,7 @@
                                     <td>0</td>
                                     <td class="test">
                                         <div class="btn-dashboard-edit">
-                                            <a href="#">EDIT</a> 
+                                            <a href="/events/edit/{{ $event->id }}">EDIT</a> 
                                         </div>      
                                         <form action="/events/{{ $event->id }}" method="POST">
                                             @csrf

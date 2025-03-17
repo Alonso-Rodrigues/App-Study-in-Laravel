@@ -94,4 +94,11 @@ class EventController extends Controller
       
       return redirect('dashboard')->with('msg', 'Event deleted successfully');
    }
+
+   public function edit($id){
+
+      $event = Event::findOrFail($id);
+
+      return view('events.edit', ['event' => $event]);
+   }
 }
