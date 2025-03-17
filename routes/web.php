@@ -9,6 +9,8 @@ Route::get('/events/create', [EventController::class, 'create'])->middleware('au
 
 Route::get('/events/edit/{id}', [EventController::class, 'edit'])->middleware('auth');
 
+Route::put('/events/{id}', [EventController::class, 'update'])->middleware('auth');
+
 Route::delete('events/{id}', [EventController::class, 'destroy'])->middleware('auth');
 
 Route::get('/', [EventController::class, 'home'] );

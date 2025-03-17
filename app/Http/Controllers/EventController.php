@@ -101,4 +101,25 @@ class EventController extends Controller
 
       return view('events.edit', ['event' => $event]);
    }
+
+   public function update(Request $request, $id){
+
+      $data = $request->all();
+     
+
+      if($request->hasFile('image') && $request->file('image')->isValid()){
+
+         $requestImage = $request->image;
+         $extension = $requestImage->extension();
+         $imageName = md5($requestImage->getClientOriginalName() . strtotime('now')) . "." . $extension;
+         $requestImage->move(public_path('img/events'), $imageName);
+         $data['image'] = $imageName;
+      }
+
+      $event = Event::findOrFail($id);
+      $event->update($data);
+    
+      
+      return redirect('dashboard')->with('msg', 'Event edited successfully');
+   }
 }

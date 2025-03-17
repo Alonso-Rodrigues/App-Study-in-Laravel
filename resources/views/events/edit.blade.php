@@ -6,7 +6,7 @@
   <section class="edit_container">
     <section class="edit_content">
       <h1 id="edit-event-title">Editing: {{ $event->title }}</h1>
-      <form class="edit-form-events" action="/events/update/{{ $event->id }}" method="POST" enctype="multipart/form-data">
+      <form class="edit-form-events" action="/events/{{ $event->id }}" method="POST" enctype="multipart/form-data">
         @csrf {{-- blade directive against Cross-site request forgery attacks --}}
         @method('PUT')
         <label class="edit-event-label" for="img">Event image</label>
@@ -32,7 +32,9 @@
         </select>
           
         <label class="edit-event-label" for="title">Description</label>
-        <textarea class="edit-textarea-form" type="text" name="description" id="description" placeholder="What will your event be like?" value="{{ $event->description }}"></textarea>
+        <textarea class="edit-textarea-form" type="text" name="description" id="description" placeholder="What will your event be like?">
+          {{ $event->description }}
+        </textarea>
 
         <label class="edit-event-label" for="title">Add infrastructure</label>
         <section class="edit-event-items">
@@ -42,7 +44,7 @@
           <label><input type="checkbox" name="items[]" value="stage lighting"> Free Wi-Fi</label>
         </section>
 
-        <button class="btn-edit" type="submit" value="edit event">Submit</button>
+        <button class="btn-edit" type="submit" value="edit event">EDIT EVENT</button>
       </form>
     </section>
   </section>
