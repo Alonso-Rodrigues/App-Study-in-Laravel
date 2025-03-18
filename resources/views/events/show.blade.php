@@ -40,9 +40,9 @@
         <p><ion-icon name="star-outline"></ion-icon> Producer: {{ $eventOwner['name'] }}</p>
         <p>{{ $event->description }}</p>
       </section>
-      <form action="/events/join/{{ $event->id }}" method="POST">
+      <form class="btn-show" action="/events/join/{{ $event->id }}" method="POST">
         @csrf
-        <a class="btn-show" href="/events/join/{{ $event->id }}" id="event-submit"
+        <a  href="/events/join/{{ $event->id }}" id="event-submit"
         onclick="event.preventDefault();
         this.closest('form').submit();">
           Subscribe
