@@ -30,7 +30,7 @@
           </h3>
           <p id="show-date">{{ date('d/m/y', strtotime($event->date)) }}</p>
           <p id="show-participants">
-            <ion-icon name="people-outline"></ion-icon> Participants
+            <ion-icon name="people-outline"></ion-icon> Participants: {{ count($event->users) }}
           </p>
         </section>
 
@@ -40,8 +40,14 @@
         <p><ion-icon name="star-outline"></ion-icon> Producer: {{ $eventOwner['name'] }}</p>
         <p>{{ $event->description }}</p>
       </section>
-      <button class="btn-show"><a href="#">Subscribe</a></button>
-
+      <form action="/events/join/{{ $event->id }}" method="POST">
+        @csrf
+        <a class="btn-show" href="/events/join/{{ $event->id }}" id="event-submit"
+        onclick="event.preventDefault();
+        this.closest('form').submit();">
+          Subscribe
+        </a>
+      </form>
     </section>
   </section>
 @endsection
