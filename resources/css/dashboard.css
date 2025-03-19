@@ -21,6 +21,7 @@
   border-radius: 5px;
   padding: 1%;
   color: aliceblue;
+  padding: 1%;
 }
 
 #dashboard-title {
@@ -35,6 +36,7 @@
   align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
+  margin: 1%;
 }
 
 .dashboard-content-table table {
@@ -71,4 +73,40 @@
   text-decoration: none;
   color: rgb(88, 187, 229);
   text-shadow: rgb(62, 102, 138) 1px 3px 3px;
+}
+
+/* dashboard-my-events */
+
+.dashboard-my-events {
+  min-height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* border: 0.1mm solid rgba(255, 255, 255, 0.2); */
+  border-radius: 5px;
+  margin: 1%;
+}
+
+.dashboard-my-events table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+
+}
+
+.dashboard-my-events th,
+.dashboard-my-events td {
+  height: 100px;
+  padding: 30px;
+  border-bottom: 0.1mm solid rgba(255, 255, 255, 0.2);
+}
+
+.dashboard-my-events th {
+  font-size: 1.2rem;
+}
+
+.dashboard-my-events td a {
+  text-decoration: none;
 }
