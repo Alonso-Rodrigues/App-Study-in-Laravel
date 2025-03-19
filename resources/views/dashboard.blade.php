@@ -29,7 +29,7 @@
                                             {{ $event->title }}
                                         </a>
                                     </td>
-                                    <td>0</td>
+                                    <td>{{ count($event->users) }}</td>
                                     <td class="test">
                                         <div class="btn-dashboard-edit">
                                             <a href="/events/edit/{{ $event->id }}">EDIT</a> 
