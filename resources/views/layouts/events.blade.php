@@ -36,7 +36,7 @@
           <button class="content-btn"><a href="/events/{{ $event->id }}">Learn more</a></button>
         </section>
         <section class="events-data">
-          <h2 id="event-title">{{ $event->title  }}</h2>
+          <h2 id="event-title">{{ $event->title }}</h2>
           <h3 id="event-city">
             <ion-icon name="pin-outline"></ion-icon>{{ $event->city }}
           </h3>
