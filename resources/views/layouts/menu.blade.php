@@ -1,7 +1,7 @@
 <header class="container-menu">
     <nav class="menu-nav">
         @auth
-            <p id="user-name">Welcome: {{ $user->name }}</p>
+            <p id="user-name">Welcome: {{ auth()->user()->name }}</p>
         @endauth
         <ul class="menu-ul">
             @auth
