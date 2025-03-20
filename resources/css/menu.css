@@ -14,26 +14,27 @@
 }
 
 .menu-nav {
-  display: flex;
-  align-items: center;
   height: 100%;
   width: 100%;
-  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .menu-ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 20px;
   height: 90%;
-  width: 90%;
+  width: 60%;
 }
 
 .menu-li {
+  height: 50%;
+  min-width: 11%;
   display: flex;
   align-items: center;
-  height: 50%;
-  width: 10%;
   list-style-type: none;
   justify-content: space-evenly;
   transition: transform 0.10s ease, background-color 0.3s ease, color 0.3s ease;
@@ -57,4 +58,14 @@
   text-decoration: none;
   font-weight: 500;
   color: aliceblue;
+}
+
+#user-name {
+  /* height: 50%; */
+  /* width: 20%; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20%;
 }

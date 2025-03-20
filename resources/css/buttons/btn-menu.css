@@ -1,17 +1,18 @@
-header button {
-  font-size: large;
+.btn-menu {
   height: 50%;
-  width: 5%;
+  min-width: 5%;
   background-color: rgba(0, 0, 0, 0.5);
   border-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
   border: 0.1mm solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
+  font-size:medium;
+  margin: 30px;
   cursor: pointer;
   transition: transform 0.10s ease, background-color 0.1s ease, color 0.1s ease;
 }
 
-header button:hover {
+.btn-menu:hover {
   transform: scale(1.06);
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.5);
@@ -21,7 +22,7 @@ header button:hover {
   color: black;
 }
 
-header button a {
+.btn-menu a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +34,7 @@ header button a {
   color: aliceblue;
 }
 
-header button a:hover {
+.btn-menu a:hover {
   font-weight: 700;
   color: black;
 }

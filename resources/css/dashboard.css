@@ -75,7 +75,7 @@
   text-shadow: rgb(62, 102, 138) 1px 3px 3px;
 }
 
-/* dashboard-my-events */
+/* ----------|dashboard-my-events|---------- */
 
 .dashboard-my-events {
   min-height: 50%;
@@ -84,7 +84,6 @@
   justify-content: center;
   align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.4);
-  /* border: 0.1mm solid rgba(255, 255, 255, 0.2); */
   border-radius: 5px;
   margin: 1%;
 }
