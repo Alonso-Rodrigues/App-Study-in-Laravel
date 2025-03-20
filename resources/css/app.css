@@ -11,6 +11,7 @@
 @import 'contact.css';
 @import 'content.css';
 @import 'footer.css';
+@import 'login.css';
 @import 'buttons/btn-menu.css';
 @import 'buttons/btn-content.css';
 @import 'buttons/btn-search.css';
@@ -19,6 +20,7 @@
 @import 'buttons/btn-show.css';
 @import 'buttons/btn-edit.css';
 @import 'buttons/btn-dashboard.css';
+@import 'buttons/btn-login.css';
 
 [x-cloak] {
     display: none;

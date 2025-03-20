@@ -4,7 +4,6 @@
 
 @section('content') 
   <section class="events-container">
-
     <section class="search-container">
       @if($search)
        <h1 class="no-events">Searching for the event: {{ $search }}</h1>

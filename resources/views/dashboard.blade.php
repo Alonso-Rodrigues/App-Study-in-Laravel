@@ -52,6 +52,44 @@
                     </p>
                 @endif
             </section>
+            <h1 id="dashboard-title">Events I'm attending</h1>
+            <section class="dashboard-my-events">
+                @if(count($eventsAsParticipant) > 0)
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Participants</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($eventsAsParticipant as $event)
+                                <tr>
+                                    <td>{{ $loop->index + 1 }}</td>
+                                    <td>
+                                        <a class="btn-dashboard-title" href="/events/{{ $event->id }}">
+                                            {{ $event->title }}
+                                        </a>
+                                    </td>
+                                    <td>{{ count($event->users) }}</td>
+                                    <td class="test">
+                                        <div class="btn-dashboard-edit">
+                                            <a href="#">LEAVE</a> 
+                                        </div>       
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table> 
+                    @else
+                    <p>
+                        You are not yet participating in any event
+                        <a href="/">See all events</a>
+                    </p>
+                @endif
+            </section>
         </section>
     </section>
 @endsection
