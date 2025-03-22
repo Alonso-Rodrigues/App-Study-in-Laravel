@@ -103,8 +103,8 @@ class EventController extends Controller
 
       $event = Event::findOrFail($id);
       $user = auth()->user();
-
-      if($user->id != $event->$user->id){
+      
+      if($user->id != $event->user_id){
 
       return redirect('dashboard');
 
