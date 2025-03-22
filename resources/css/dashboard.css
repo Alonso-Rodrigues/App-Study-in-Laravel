@@ -65,7 +65,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin: auto;
 }
 
@@ -108,4 +108,21 @@
 
 .dashboard-my-events td a {
   text-decoration: none;
+}
+
+.dashboard-participate {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  color: aliceblue;
+}
+
+.dashboard-participate a {
+  text-decoration: none;
+  color: rgb(88, 187, 229);
+  text-shadow: rgb(62, 102, 138) 1px 3px 3px;
 }

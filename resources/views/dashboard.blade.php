@@ -84,7 +84,7 @@
                         </tbody>
                     </table> 
                     @else
-                    <p>
+                    <p class="dashboard-participate">
                         You are not yet participating in any event
                         <a href="/">See all events</a>
                     </p>
