@@ -103,7 +103,7 @@ class EventController extends Controller
 
       $event = Event::findOrFail($id);
       $user = auth()->user();
-      
+
       if($user->id != $event->user_id){
 
       return redirect('dashboard');
@@ -136,10 +136,17 @@ class EventController extends Controller
 
    public function joinEvent($id){
 
-      $user = auth()->user();
-      $user->eventsAsParticipant()->attach($id);
       $event = Event::findOrFail($id);
+      $user = auth()->user();
+      
+      if ($event->users()->where('user_id', $user->id)->exists()) {
+         return redirect()->back()->with('msg', 'You are already subscribed to this event!');
+      }
 
+      $user->eventsAsParticipant()->attach($id);
+      
       return redirect('dashboard')->with('msg', 'Your presence has been confirmed at the event:' . $event->title);
    }
+
 }
+

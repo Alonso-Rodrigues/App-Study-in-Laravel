@@ -1,5 +1,5 @@
 #msg {
-  position: absolute;
+  position: relative;
   height: 10%;
   width: 98%;
   display: flex;
@@ -9,7 +9,6 @@
   border-radius: 5px;
   color: #1d8536;
   font-size: 2rem;
-  top: 136px;
 }
 
 

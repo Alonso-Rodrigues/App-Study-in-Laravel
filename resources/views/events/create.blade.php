@@ -3,7 +3,6 @@
 @section('title', 'Create Events Page')
 
 @section('content')
-
   <section class="create_container">
     <section class="create_content">
       <h1 id="create-event-title"> Create Your Event!</h1>
@@ -43,5 +42,4 @@
       </form>
     </section>
   </section>
-
 @endsection
