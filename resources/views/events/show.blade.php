@@ -4,15 +4,17 @@
 
 @section('content')
   <section class="show-container">
+    
     <section class="show-content">
-
+      @if(session('msg'))
+        <p id="msg">{{session('msg')}}</p>
+      @endif
       <section class="show-title-img">
         <h1 id="show-title">{{ $event->title }}</h1>
         <img class="show-img" src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
       </section>
 
       <section class="show-info">
-
         <section class="show-items">
           <h3>The event will include</h3>
           <ul class="show-items-ul">
@@ -33,7 +35,6 @@
             <ion-icon name="people-outline"></ion-icon> Participants: {{ count($event->users) }}
           </p>
         </section>
-
       </section>
 
       <section class="show-description">
