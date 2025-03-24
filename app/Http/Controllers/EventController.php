@@ -29,30 +29,38 @@ class EventController extends Controller
       return view('layouts.events', ['events' => $events, 'search' => $search]);
    }
 
-   public function store(Request $request){
-      $event = new Event;
-      $event->title = $request->title;
-      $event->date = $request->date;
-      $event->city = $request->city;
-      $event->private = $request->private;
-      $event->description = $request->description;
-      $event->items = $request->items ;
-      
-      //Image Upload
-      if($request->hasFile('image') && $request->file('image')->isValid()){
+   public function store(Request $request) {
 
-         $requestImage = $request->image;
-         $extension = $requestImage->extension();
-         $imageName = md5($requestImage->getClientOriginalName() . strtotime('now')) . "." . $extension;
-         $requestImage->move(public_path('img/events'), $imageName);
-         $event->image = $imageName;
+    $validatedData = $request->validate([
+         'title' => 'required|string|max:255',
+         'date' => 'required|date|after_or_equal:today',
+         'city' => 'required|string|max:100',
+         'private' => 'required|boolean',
+         'description' => 'required|string|',
+         'items' => 'sometimes|array',
+         'items.*' => 'nullable|string|distinct', 
+         'image' => 'required|image|mimes:jpg,jpeg,png,webp|max:2048'
+      ]);
+      try {
+         $validatedData['user_id'] = auth()->id();
+
+         //Upload da imagem
+         if($request->hasFile('image') && $request->file('image')->isValid())
+         {
+            $requestImage = $request->file('image');
+            $extension = $requestImage->extension();
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime('now')) . "." . $extension;
+            $requestImage->move(public_path('img/events'), $imageName);
+            $validatedData['image'] = $imageName;
+
+            Event::create($validatedData);
+
+            return redirect('dashboard')->with('msg','Event created successfully!');
+         }
+
+      } catch (\Exception $e) {
+         return back()->with('msg', 'Erro ao criar evento: ' . $e->getMessage());
       }
-
-      $user = auth()->user();
-      $event->user_id = $user->id;
-
-      $event->save();
-      return redirect('dashboard')->with('msg','Event created successfully!');
    }
 
    public function create(){

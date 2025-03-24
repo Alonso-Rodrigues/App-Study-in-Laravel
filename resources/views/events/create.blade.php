@@ -12,7 +12,7 @@
         <input class="create-input-img" type="file" id="image" name="image" required>
 
         <label class="create-event-label" for="date">Event date</label>
-        <input class="create-input-date" type="date" id="date" name="date" required>
+        <input class="create-input-date" type="date" id="date" name="date" min="{{ now()->format('Y-m-d') }}" required>
         
         <label class="create-event-label" for="title">Event</label>
         <input class="create-input-form" type="text" id="title" name="title" placeholder="Event Name" required>
@@ -22,7 +22,7 @@
         
         <label class="create-event-label" for="title">Is this event private?</label>
         <select class="create-event-select" name="private" id="private" required >
-          <option  value="">Selection</option>
+          <option value="" disabled selected>Selection</option>
           <option value="0">No</option>
           <option value="1">Yes</option>
         </select>
