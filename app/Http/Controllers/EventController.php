@@ -89,13 +89,18 @@ class EventController extends Controller
    public function destroy($id)
    {
       $event = Event::findOrFail($id);
-      $imagePath = public_path('img/events/' . $event->image);
-      $event->delete();
-
-      if (file_exists($imagePath)) {
-         unlink($imagePath);
-      }
+      $imagePath = public_path('img/events/');
+      $imageName = pathinfo($event->image, PATHINFO_FILENAME);
       
+      foreach (['avif', 'jpg', 'png', 'webp'] as $extension) {
+         $filePath = $imagePath . $imageName . '.' .$extension;
+
+         if (file_exists($filePath)) {
+            unlink($filePath);
+         }
+      }
+      $event->delete();
+         
       return redirect('dashboard')->with('msg', 'Event deleted successfully');
    }
 
