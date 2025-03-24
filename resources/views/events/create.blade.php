@@ -9,29 +9,39 @@
       <form class="create-form-events" action="/events" method="POST" enctype="multipart/form-data">
         @csrf {{-- blade directive against Cross-site request forgery attacks --}}
         <label class="create-event-label" for="img">Event image</label>
-        <input class="create-input-img" type="file" id="image" name="image">
+        <input class="create-input-img" type="file" id="image" name="image" required>
 
         <label class="create-event-label" for="date">Event date</label>
-        <input class="create-input-date" type="date" id="date" name="date">
+        <input class="create-input-date" type="date" id="date" name="date" min="{{ now()->format('Y-m-d') }}" required>
         
         <label class="create-event-label" for="title">Event</label>
-        <input class="create-input-form" type="text" id="title" name="title" placeholder="Event Name">
+        <input class="create-input-form" type="text" id="title" name="title" placeholder="Event Name" required>
         
         <label class="create-event-label" for="title">City</label>
-        <input class="create-input-form" type="text" id="city" name="city" placeholder="Local Event">
+        <input class="create-input-form" type="text" id="city" name="city" placeholder="Local Event" required>
         
         <label class="create-event-label" for="title">Is this event private?</label>
-        <select class="create-event-select" name="private" id="private">
-          <option>Selection</option>
+        <select class="create-event-select" name="private" id="private" required >
+          <option value="" disabled selected>Selection</option>
           <option value="0">No</option>
           <option value="1">Yes</option>
         </select>
           
         <label class="create-event-label" for="title">Description</label>
-        <textarea class="create-textarea-form" type="text" name="description" id="description" placeholder="What will your event be like?"></textarea>
+        <textarea 
+          class="create-textarea-form" 
+          type="text" 
+          name="description" 
+          id="description" 
+          placeholder="What will your event be like?"
+          required 
+        ></textarea>
 
         <label class="create-event-label" for="title">Add infrastructure</label>
         <section class="create-event-items">
+          <!-- Hidden input to ensure items[] exists even without selection -->
+          <input type="hidden" name="items[]" value="">
+          <!-- Real checkboxes -->
           <label><input type="checkbox" name="items[]" value="stage"> VIP Area</label>
           <label><input type="checkbox" name="items[]" value="stereo"> Lounge Seating</label>
           <label><input type="checkbox" name="items[]" value="pick-Ups"> Free Drinks</label>
