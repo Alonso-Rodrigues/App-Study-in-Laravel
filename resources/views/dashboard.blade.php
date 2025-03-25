@@ -34,7 +34,7 @@
                                         <div class="btn-dashboard-edit">
                                             <a href="/events/edit/{{ $event->id }}">EDIT</a> 
                                         </div>      
-                                        <form action="/events/{{ $event->id }}" method="POST">
+                                        <form action="/events/delete/{{ $event->id }}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn-dashboard-delete">
@@ -74,10 +74,14 @@
                                         </a>
                                     </td>
                                     <td>{{ count($event->users) }}</td>
-                                    <td class="test">
-                                        <div class="btn-dashboard-edit">
-                                            <a href="#">LEAVE</a> 
-                                        </div>       
+                                    <td>
+                                        <form action="/events/leave/{{ $event->id }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn-dashboard-delete">
+                                                LEAVE
+                                            </button>
+                                        </form> 
                                     </td>
                                 </tr>
                             @endforeach
