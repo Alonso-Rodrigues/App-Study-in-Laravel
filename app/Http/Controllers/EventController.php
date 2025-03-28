@@ -180,4 +180,3 @@ class EventController extends Controller
    }
 
 }
-
