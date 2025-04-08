@@ -1,34 +1,26 @@
-<x-guest-layout>
-    <x-authentication-card>
-        <x-slot name="logo">
-            <x-authentication-card-logo />
-        </x-slot>
+@extends('home')
 
-        <div class="mb-4 text-sm text-gray-600">
-            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
-        </div>
+@section('title', 'Forgotten Password')
 
-        @session('status')
-            <div class="mb-4 font-medium text-sm text-green-600">
-                {{ $value }}
-            </div>
-        @endsession
+@section('content')
+    <section class="container-forget-pwd">
 
-        <x-validation-errors class="mb-4" />
+        @if (session('status'))
+            <p class="status-message">{{ session('status') }}</p>
+        @endif
 
-        <form method="POST" action="{{ route('password.email') }}">
+        <form class="container-login-form" method="POST" action="{{ route('password.email') }}">
+
+            <p id="text-forget-pwd">
+                Forgot your password? No problem. 
+                Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.
+            </p>
             @csrf
+            <label class="login-label" for="email">Email</label>
+            <input class="login-input" id="email" type="email" name="email">
 
-            <div class="block">
-                <x-label for="email" value="{{ __('Email') }}" />
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <x-button>
-                    {{ __('Email Password Reset Link') }}
-                </x-button>
-            </div>
+            <button class="btn-login">{{ __('Password Reset') }}</button>          
         </form>
-    </x-authentication-card>
-</x-guest-layout>
+        
+    </section>
+@endsection
